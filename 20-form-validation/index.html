@@ -1,33 +1,31 @@
-<DOCTYPE'html'>
-<html lang='en'>
-<head>
-  <meta charest='UTF-8'>
-  <title>hello</title>
-  <link rel='stylesheet' href="./rectangle.css">
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css" type="text/css"/>
 <body>
-<div class="main">
-  <label>宽度：<label>
-  <input id='width' type='text'>
-  <span>*</span>
-  <br>
-  <div id="width-validation-message"></div>
-  <label>高度：</label>
-  <input id ='height' type='text'>
-  <span>*</span>
-  <br>
-  <div id="height-validation-message"></div>
-  <input id='calculate' type='button' value='计算'>
-  <br>
-  <label>周长：</label>
-  <input id = 'perimeter' type='text' disabled>
-  <br>
-  <label>面积：</label>
-  <input id='area' type='text' disabled>
-</div>
-  <script src='//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
-  <script src='./rectangle.js'></script>
+  <div class="main">
+    <label for="">宽度：</label>
+    <input id="width" type="text" required>
+    <span>*</span>
+    <br>
+    <div id='width-validation-message'></div>
+    <label for="">高度：</label>
+    <input id="height" type="text" required>
+    <span>*</span>
+    <br>
+    <div id='height-validation-message'></div>
+    <input id="calculate" type="button" value="计算">
+    <input id="reset" type="button" value="重置">
+    <br>
+    <label for="">面积：</label>
+    <input id= "area" disabled type="text">
+    <br>
+    <label for="">周长：</label>
+    <input id="perimeter" disabled type="text">
+    <br>
+  </div>
 </body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script src="./index.js"></script>
 </html>
-
-
